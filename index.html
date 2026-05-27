@@ -159,6 +159,7 @@
   .who-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
   .who-copy h2{margin-bottom:26px}
   .who-copy p{color:var(--ink-soft);margin-bottom:18px}
+  .who-copy .expand-note{border-left:2px solid var(--accent-2);padding-left:16px;font-size:.92rem;color:var(--ink-faint)}
   .who-copy .pill{display:inline-flex;align-items:center;gap:9px;font-family:'Space Mono',monospace;font-size:.74rem;letter-spacing:1.2px;color:var(--accent);border:1px solid var(--line);border-radius:40px;padding:7px 16px;margin-top:8px}
   .who-visual{position:relative}
   .who-visual .frame{position:relative;border:1px solid var(--line);border-radius:4px;overflow:hidden;aspect-ratio:4/5}
@@ -244,6 +245,19 @@
   .gloss .g .row{display:flex;justify-content:space-between;font-size:.86rem}
   .gloss .g .row b{font-family:'Space Mono',monospace}
   .gloss .lbl{font-family:'Space Mono',monospace;font-size:.74rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-faint)}
+  /* 업계 표준 vs NST 비교 */
+  .vs-box{border:1px solid rgba(95,179,163,.35);border-radius:5px;padding:24px;background:var(--panel)}
+  .vs-row{margin-top:16px}
+  .vs-row:first-of-type{margin-top:18px}
+  .vs-head{display:flex;justify-content:space-between;align-items:baseline;font-size:.9rem;margin-bottom:7px}
+  .vs-head .who{color:var(--ink-soft)}
+  .vs-head .gu{font-family:'Space Mono',monospace;font-weight:700}
+  .vs-track{height:10px;border-radius:6px;background:var(--bg);border:1px solid var(--line);overflow:hidden}
+  .vs-track .vf{height:100%;border-radius:6px}
+  .vs-row.industry .gu{color:var(--ink-soft)}
+  .vs-row.nst .who{color:var(--ink)}
+  .vs-row.nst .gu{color:var(--accent-2)}
+  .vs-note{font-size:.82rem;color:var(--ink-faint);margin-top:16px;line-height:1.6;font-family:'Space Mono',monospace}
 
   /* ---------- PRODUCTS / APPLICATIONS ---------- */
   .apps-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
@@ -391,6 +405,7 @@
       <p>노바스타테크(NST)는 표면 필름만을 전문으로 하는 기업입니다. 15년 넘게 경질 바닥재용 PVC 데코 필름을 개발하고 다듬어 왔으며, 시장의 모든 트렌드 변화를 따라가며 기술을 완전히 성숙시켰습니다.</p>
       <p>저희는 고객사와 경쟁하지 않습니다. 바닥재의 외관과 내구성을 결정하는 단 하나의 핵심 소재 — 인쇄·선코팅된 표면 필름 — 을 공급할 뿐입니다. SPC·LVT 제조사는 저희 필름을 보드에 라미네이션해 완성된 프리미엄 매트 제품을 출하합니다.</p>
       <p>코팅이 필름에 이미 내장되어 있기 때문에, 고객사는 생산 공정 한 단계 전체와 그에 드는 막대한 설비 투자를 건너뛸 수 있습니다.</p>
+      <p class="expand-note">같은 선코팅 필름 기술은 바닥재를 넘어 확장됩니다. PP·PET-G 필름은 내벽·건축자재, 문·가구·싱크대, 그리고 대리석 질감의 컬러강판(예: 엘리베이터·빌딩 내장재)에 적용됩니다. 원하는 무늬와 질감을 그대로 구현합니다.</p>
       <span class="pill">◆ 전문 분야 · 선코팅 PVC 데코 필름</span>
     </div>
     <div class="who-visual reveal">
@@ -557,6 +572,7 @@
       <table class="spec-table reveal">
         <tr><td>제품</td><td>선코팅 PVC 데코 필름</td></tr>
         <tr><td>마감</td><td><em>슈퍼 매트</em></td></tr>
+        <tr><td>표면 성능</td><td>내스크래치 · 내오염</td></tr>
         <tr><td>광택 — Type A</td><td><em>GU 1.5</em></td></tr>
         <tr><td>광택 — Type B</td><td>GU 2.0</td></tr>
         <tr><td>코팅</td><td>선적용 (UV 라인 불필요)</td></tr>
@@ -579,6 +595,18 @@
         <div class="g" style="border-color:rgba(95,179,163,.35)">
           <div class="lbl" style="color:var(--accent-2)">저광택이 중요한 이유</div>
           <p style="font-size:.92rem;color:var(--ink-soft);margin-top:8px">미국·서유럽·한국 등 프리미엄 시장은 저광택 바닥재를 점점 더 선호합니다. 노바스타테크 필름은 스톤파우더의 단점 없이 그 질감을 구현합니다.</p>
+        </div>
+        <div class="vs-box">
+          <div class="lbl" style="color:var(--accent-2)">업계 표준 vs 노바스타테크</div>
+          <div class="vs-row industry">
+            <div class="vs-head"><span class="who">업계 대부분의 "울트라 매트"</span><span class="gu">GU 3 전후</span></div>
+            <div class="vs-track"><div class="vf" style="width:60%;background:#4a4f57"></div></div>
+          </div>
+          <div class="vs-row nst">
+            <div class="vs-head"><span class="who">노바스타테크 Type A</span><span class="gu">GU 1.5</span></div>
+            <div class="vs-track"><div class="vf" style="width:30%;background:linear-gradient(90deg,#d4af37,#5fb3a3)"></div></div>
+          </div>
+          <p class="vs-note">// 광택도(GU)는 낮을수록 무광. 업계 대부분은 GU 3 전후를 '울트라 매트'로 정의하며, GU 1.5 이하 양산 사례는 아직 드뭅니다.</p>
         </div>
       </div>
     </div>
