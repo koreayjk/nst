@@ -137,7 +137,7 @@
 
   .hero-stats{display:flex;gap:46px;margin-top:64px;flex-wrap:wrap;opacity:0;animation:fadeUp .8s .9s forwards}
   .hero-stats .s b{font-family:'Archivo Expanded','Pretendard',sans-serif;font-size:2rem;color:var(--ink);display:block;line-height:1}
-  .hero-stats .s span{font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-faint);margin-top:8px;display:block}
+  .hero-stats .s span{font-family:'Space Mono',monospace;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-soft);margin-top:8px;display:block}
   .hero-stats .s b em{color:var(--accent);font-style:normal}
 
   @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
@@ -250,7 +250,7 @@
   .vs-box{border:1px solid rgba(95,179,163,.35);border-radius:5px;padding:24px;background:var(--panel)}
   .vs-row{margin-top:16px}
   .vs-row:first-of-type{margin-top:18px}
-  .vs-head{display:flex;justify-content:space-between;align-items:baseline;font-size:.9rem;margin-bottom:7px}
+  .vs-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:2px 14px;font-size:.9rem;margin-bottom:7px}
   .vs-head .who{color:var(--ink-soft)}
   .vs-head .gu{font-family:'Space Mono',monospace;font-weight:700}
   .vs-track{height:10px;border-radius:6px;background:var(--bg);border:1px solid var(--line);overflow:hidden}
@@ -403,7 +403,7 @@
 <div class="hero-stats">
 <div class="s"><b>15<em>+</em></b><span data-i18n="top.span_4">년 필름 연구개발</span></div>
 <div class="s"><b>200<em data-i18n="top.em">만m</em></b><span data-i18n="top.span_5">월 생산능력 (미터)</span></div>
-<div class="s"><b>1.3±0.3</b><span data-i18n="top.span_6">슈퍼 매트 광택 (117-T)</span></div>
+<div class="s"><b>GU 1.3±0.3</b><span data-i18n="top.span_6">슈퍼 매트 광택 (117-T)</span></div>
 <div class="s"><b>0</b><span data-i18n="top.span_7">필요한 코팅 라인</span></div>
 </div>
 </div>
@@ -578,7 +578,7 @@
 <div class="vs-track"><div class="vf" style="width:60%;background:#4a4f57"></div></div>
 </div>
 <div class="vs-row nst">
-<div class="vs-head"><span class="who" data-i18n="specs.who_2">노바스타테크 Nova Hybrid Up coated PVC 내마모층 필름 117-T</span><span class="gu">GU 1.3·2.8·4.2·5.5 ±0.3 공급</span></div>
+<div class="vs-head"><span class="who" data-i18n="specs.who_2">노바스타테크 Nova Hybrid Up coated PVC 내마모층 필름 117-T</span><span class="gu">GU 1.3 / 2.8 / 4.2 / 5.5 (±0.3) 공급 가능</span></div>
 <div class="vs-track"><div class="vf" style="width:30%;background:linear-gradient(90deg,#d4af37,#5fb3a3)"></div></div>
 </div>
 <p class="vs-note" data-i18n="specs.vs_note">// 광택도(GU)는 낮을수록 저광. 업계 대부분은 GU 3~5 전후를 '울트라 매트'로 정의하며, GU 1.3 이하 양산 사례는 아직 드뭅니다.</p>
